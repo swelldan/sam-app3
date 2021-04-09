@@ -8,8 +8,11 @@
 // Note that token values are case-sensitive.
 
 exports.handler =  function(event, context, callback) {
-    var token = event.authorizationToken;
-    switch (token) {
+    const queryStringParams = event.queryStringParameters.auth;
+    // console.log('Client token: ' + event.authorizationToken);
+    // console.log('Method ARN: ' + event.methodArn);
+    // var token = event.authorizationToken;
+    switch (queryStringParams) {
         case 'allow':
             callback(null, generatePolicy('user', 'Allow', event.methodArn));
             break;

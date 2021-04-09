@@ -3,9 +3,8 @@ version = 0.1
 [default.deploy]
 [default.deploy.parameters]
 stack_name = "sam-app2"
-s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-ijn6pqwgrj9q"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-1k680r2fmamuw"
 s3_prefix = "sam-app2"
-region = "us-east-1"
-profile = "elb-core"
+region = "us-east-2"
 confirm_changeset = true
 capabilities = "CAPABILITY_IAM"
